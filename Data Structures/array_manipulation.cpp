@@ -3,8 +3,11 @@ using namespace std;
 
 int main(int argc, char const *argv[])
 {
-	std::vector<int> array(5, 0);
-	for (int i = 0; i < 3 ; ++i)
+	int size, queries;
+	cin >> size >> queries;
+	std::vector<int> array(size, 0);
+	
+	for (int i = 0; i < queries ; ++i)
 	{
 		int start, end, num;
 		cin >> start >> end >> num;
